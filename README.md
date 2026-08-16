@@ -1,25 +1,6 @@
 # Chrome Web Store Metadata & Presentation Package
 
-## 1. Extension Store Metadata
-
-* **Primary Extension Name:** AI Workspace Agent - Multimodal Web Assistant
-* **Short Name (for OS/Browser limits):** Workspace AI Agent
-* **Short Description (Max 132 characters):** 
-  Automate web scraping, RSS research, and multi-step tasks using Gemini or OpenRouter AI agents directly on any tab.
-
----
-
-## 2. Low-Competition SEO Keyword Strategy Matrix
-
-| Keyword Category | Target Search Terms | Search Intent / Competition Profile |
-| :--- | :--- | :--- |
-| **Primary High-Volume** | AI browser agent, multimodal AI assistant, web scraper AI | High competition, broad user intent |
-| **Low-Competition Long-Tail** | autonomous react loop extension, rss ai summary scraper, bring your own api key ai extension, custom javascript web scraper agent | Low competition, high conversion intent from power users & developers |
-| **Feature-Specific Niche** | custom tools web agent, scheduled page monitoring ai, gemini openrouter workspace extension | Extremely low competition, targets users searching for specific capabilities |
-
----
-
-## 3. Chrome Web Store Full Description Copy
+## 1. Chrome Web Store Full Description Copy
 
 ### AI Workspace Agent: Your Autonomous Multi-Modal Web Companion
 
