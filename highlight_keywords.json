@@ -1,0 +1,8 @@
+[
+  {
+    "uid": "tool_highlight_keywords",
+    "name": "highlight_keywords",
+    "description": "Highlights matching text phrases across the current active page DOM with a yellow custom marker.",
+    "codeSnippet": "const term = params.query || 'important'; const regex = new RegExp(`(${term})`, 'gi'); document.body.innerHTML = document.body.innerHTML.replace(regex, '<mark style=\"background-color: #ffeb3b; color: #000;\">$1</mark>'); return { success: true, term };"
+  }
+]
