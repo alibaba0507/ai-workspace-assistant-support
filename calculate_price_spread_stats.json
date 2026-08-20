@@ -1,5 +1,5 @@
-{
+[{
     "name": "calculate_price_spread_stats",
     "description": "Parses all dollar ($) or currency numeric amounts from page context text and calculates minimum, maximum, average, and spread.",
     "codeSnippet": "const regex = /\\$?\\b\\d{1,3}(?:,\\d{3})*(?:\\.\\d{1,4})?\\b/g; const matches = pageContext.text.match(regex) || []; const numbers = matches.map(m => parseFloat(m.replace(/\\$/g, '').replace(/,/g, ''))).filter(n => !isNaN(n) && n > 0); if (numbers.length === 0) return { error: 'No numeric values identified.' }; const min = Math.min(...numbers); const max = Math.max(...numbers); const sum = numbers.reduce((a, b) => a + b, 0); const avg = sum / numbers.length; return { sampleSize: numbers.length, minPrice: min, maxPrice: max, averagePrice: avg.toFixed(2), spread: (max - min).toFixed(2) };"
-  }
+  }]
