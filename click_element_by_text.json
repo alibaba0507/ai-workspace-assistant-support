@@ -1,0 +1,8 @@
+[
+  {
+    "uid": "tool_click_by_text",
+    "name": "click_element_by_text",
+    "description": "Finds and clicks a target button or interactive link on the webpage matching the given text label.",
+    "codeSnippet": "const targetText = (params.text || '').toLowerCase(); const element = Array.from(document.querySelectorAll('button, a, input[type=\"submit\"]')).find(el => el.innerText.toLowerCase().includes(targetText)); if (element) { element.click(); return { clicked: true, text: element.innerText }; } return { clicked: false, error: 'Element not found' };"
+  }
+]
