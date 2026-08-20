@@ -1,0 +1,8 @@
+[
+  {
+    "uid": "tool_extract_tables",
+    "name": "extract_page_tables",
+    "description": "Extracts all HTML tables from the active tab and converts them into structured JSON arrays.",
+    "codeSnippet": "return Array.from(document.querySelectorAll('table')).map((table, tIdx) => ({ tableIndex: tIdx, rows: Array.from(table.querySelectorAll('tr')).map(r => Array.from(r.querySelectorAll('th, td')).map(c => c.innerText.trim())) }));"
+  }
+]
