@@ -1,0 +1,5 @@
+{
+    "name": "extract_page_metadata_schema",
+    "description": "Extracts OpenGraph tags, meta information, and JSON-LD structured data schemas from page headers.",
+    "codeSnippet": "const parser = new DOMParser(); const doc = parser.parseFromString(pageContext.html, 'text/html'); const metas = {}; Array.from(doc.querySelectorAll('meta')).forEach(m => { const name = m.getAttribute('name') || m.getAttribute('property'); if (name) metas[name] = m.getAttribute('content'); }); const jsonLd = []; Array.from(doc.querySelectorAll('script[type=\"application/ld+json\"]')).forEach(s => { try { jsonLd.push(JSON.parse(s.textContent)); } catch(e){} }); return { title: pageContext.title, url: pageContext.url, metaTags: metas, schemaJsonLd: jsonLd };"
+  }
