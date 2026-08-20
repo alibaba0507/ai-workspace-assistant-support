@@ -1,0 +1,5 @@
+{
+    "name": "extract_financial_tables",
+    "description": "Parses HTML tables from the current webpage and returns structured numeric tabular data for financial analysis.",
+    "codeSnippet": "const parser = new DOMParser(); const doc = parser.parseFromString(pageContext.html, 'text/html'); const tables = Array.from(doc.querySelectorAll('table')); const extracted = tables.map((table, i) => { const rows = Array.from(table.querySelectorAll('tr')).map(tr => Array.from(tr.querySelectorAll('th, td')).map(cell => cell.innerText.trim())); return { tableIndex: i, rows: rows.filter(r => r.length > 0) }; }); return { totalTablesFound: tables.length, tables: extracted.slice(0, 5) };"
+  }
