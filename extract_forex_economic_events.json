@@ -1,0 +1,5 @@
+{
+    "name": "extract_forex_economic_events",
+    "description": "Scrapes scheduled macroeconomic releases, actual/forecast values, and impact indicators from economic calendar web pages.",
+    "codeSnippet": "const parser = new DOMParser(); const doc = parser.parseFromString(pageContext.html, 'text/html'); const eventElements = Array.from(doc.querySelectorAll('.calendar__row, tr.event, .eco-event')); const events = eventElements.map(el => { const text = el.innerText.replace(/\\s+/g, ' ').trim(); return text; }).filter(text => text.length > 10); return { count: events.length, eventsSnippet: events.slice(0, 15) };"
+  }
