@@ -85,3 +85,35 @@ Organize output into the following categories:
 - Dividend: Dividend Yield, Payout Ratio, Ex-Dividend Date
 Format the result as a markdown table followed by a 2-sentence summary of overall financial health.
 ```
+#### Central Bank Policy & Rate Decision Matrix
+```text
+Analyze the central bank statement or press conference transcript on the page.
+Synthesize the stance into:
+1. Stance Classification: [Hawkish / Dovish / Neutral]
+2. Interest Rate Decision: (Rate changes, holds, or projections)
+3. Inflation Outlook: Commentary on CPI/PCE targets
+4. Labor Market Assessment: Key employment indicators noted
+5. Forward Guidance: Key conditions for future policy adjustments
+Provide a bulleted summary tailored for institutional currency traders.
+```
+#### E-Commerce Product & Pricing Scraper
+```text
+Extract product specifications from this web page into structured JSON:
+- product_title
+- current_price & original_price
+- discount_percentage
+- availability_status (In Stock / Out of Stock)
+- average_rating & total_reviews_count
+- key_features (Array of strings)
+```
+#### Corporate Entity & Contact Scraper
+```text
+Extract corporate identity and contact details from the provided webpage text:
+- company_name
+- executive_team (Names and Roles)
+- official_emails
+- phone_numbers
+- physical_addresses
+- social_media_links (LinkedIn, X/Twitter, GitHub)
+Return formatted JSON.
+```
