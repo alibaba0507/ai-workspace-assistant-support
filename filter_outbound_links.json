@@ -1,0 +1,5 @@
+{
+    "name": "filter_outbound_links",
+    "description": "Extracts and filters all external outbound hyperlinks on the page based on an optional domain keyword filter.",
+    "codeSnippet": "const parser = new DOMParser(); const doc = parser.parseFromString(pageContext.html, 'text/html'); const domainFilter = params.keyword ? params.keyword.toLowerCase() : ''; const links = Array.from(doc.querySelectorAll('a[href]')).map(a => ({ text: a.innerText.trim(), href: a.getAttribute('href') })).filter(l => l.href.startsWith('http') && (!domainFilter || l.href.toLowerCase().includes(domainFilter))); return { totalLinks: links.length, links: links.slice(0, 30) };"
+  }
