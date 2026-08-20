@@ -20,7 +20,7 @@ Unlike basic summarizers that only read raw text on your screen, our **ReAct Age
 Empower your AI agent with custom browser tools. Write lightweight, secure JavaScript snippets in your settings panel to give the agent direct programmatic control over page DOM elements:
 * Extract structured data tables into JSON.
 * Click specific page elements or filter dense datasets on command.
-* Import/Export tool configurations seamlessly.
+* Import/Export tool configurations seamlessly using standalone JSON files.
 
 ---
 
@@ -47,6 +47,18 @@ Empower your AI agent with custom browser tools. Write lightweight, secure JavaS
 ### 🚀 How to Get Started
 1. Click **Add to Chrome** and pin the extension icon to your toolbar.
 2. Open **Settings (⚙️)** and input your Gemini or OpenRouter API Key.
-3. Define your preferred AI model identifiers.
-4. Click the extension popup on any webpage, type your prompt, and watch the AI agent process your workspace!
+3. Import ready-to-use custom tools in the **Custom Agent Tools Matrix** (`options.html`).
+4. Paste template prompts into the **Prompt Panel** or run them directly in the extension popup!
 
+---
+
+## 2. Starter Kits & Prompt Library
+
+### 💡 Example Prompts
+
+#### Executive Web Summarizer
+```text
+You are an executive research assistant. Analyze the active tab and respond with:
+1. A 2-sentence executive summary.
+2. Bullet points highlighting 3 key takeaways or metrics.
+3. A "Critical Takeaway" section pointing out any missing context or assumptions.
